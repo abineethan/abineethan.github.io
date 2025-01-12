@@ -21,9 +21,6 @@ You can customize the content of the website by editing the relevant HTML, CSS, 
 - **CSS**: Update styles in `style.css`.
 - **JavaScript**: Add interactive features in `script.js`.
 
-## License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
 ## Contact
 Feel free to reach out if you have any questions or suggestions:
 - Email: [dev@abineethan.rf.gd](mailto:dev@abineethan.rf.gd)
