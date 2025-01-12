@@ -9,9 +9,9 @@
 	<meta name="author" content="Abineethan">
 	<meta property="og:title" content="Abineethan">
 	<meta property="og:description" content="Discover innovative solutions and creative projects by Abineethan.">
-	<meta property="og:url" content="https://abineethan.rf.gd">
+	<meta property="og:url" content="https://abineethan.is-a.dev">
 	<meta property="og:type" content="website">
-	<meta property="og:image" content="https://abineethan.rf.gd/android-chrome-512x512.png">
+	<meta property="og:image" content="https://abineethan.is-a.dev/android-chrome-512x512.png">
 	<meta name="robots" content="index, follow">
 	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -126,7 +126,7 @@
 		            	<li class="d-flex"><span>Age :</span> <span id="age"></span></li>
 		            	<li class="d-flex"><span>Address:</span> <span>Jaffna Sri Lanka</span></li>
 		            	<li class="d-flex"><span>Studying:</span> <span>JHC</span></li>
-		            	<li class="d-flex"><span>Email:</span> <span>dev@abineethan.rf.gd</span></li>
+		            	<li class="d-flex"><span>Email:</span> <span>dev@abineethan.is-a.dev</span></li>
 		            </ul>
 		          </div>
 		        </div>
@@ -503,7 +503,7 @@
           			<span class="icon-envelope"></span>
           		</div>
           		<h3 class="mb-4">Email Address</h3>
-	            <p><a href="mailto:dev@abineethan.rf.gd">dev@abineethan.rf.gd</a></p>
+	            <p><a href="mailto:dev@abineethan.is-a.dev">dev@abineethan.is-a.dev</a></p>
 	          </div>
           </div>
           <div class="col-md-6 col-lg-3 d-flex ftco-animate">
@@ -512,32 +512,56 @@
           			<span class="icon-globe"></span>
           		</div>
           		<h3 class="mb-4">Website</h3>
-	            <p><a href="https://abineethan.rf.gd">abineethan.rf.gd</a></p>
+	            <p><a href="https://abineethan.is-a.dev">abineethan.is-a.dev</a></p>
 	          </div>
           </div>
         </div>
 
         <div class="row no-gutters block-9 ftco-animate">
-          <div class="col-md-6 order-md-last d-flex">
-            <form action="mailto:dev@abineethan.rf.gd" class="bg-light p-4 p-md-5 contact-form">
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="Your Name">
-              </div>
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="Your Email">
-              </div>
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="Subject">
-              </div>
-              <div class="form-group">
-                <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
-              </div>
-              <div class="form-group">
-                <input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
-              </div>
-            </form>
-          
-          </div>
+			<div class="col-md-6 order-md-last d-flex">
+			  <form 
+				onsubmit="openMailClient(event)" 
+				class="bg-light p-4 p-md-5 contact-form">
+				<div class="form-group">
+				  <input type="text" id="name" class="form-control" placeholder="Your Name" required>
+				</div>
+				<div class="form-group">
+				  <input type="email" id="email" class="form-control" placeholder="Your Email" required>
+				</div>
+				<div class="form-group">
+				  <input type="text" id="subject" class="form-control" placeholder="Subject" required>
+				</div>
+				<div class="form-group">
+				  <textarea id="message" cols="30" rows="7" class="form-control" placeholder="Message" required></textarea>
+				</div>
+				<div class="form-group">
+				  <input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
+				</div>
+			  </form>
+			</div>
+		  </div>
+		  
+		  <script>
+			function openMailClient(event) {
+			  // Prevent the form from submitting
+			  event.preventDefault();
+		  
+			  // Get form values
+			  const name = document.getElementById('name').value;
+			  const email = document.getElementById('email').value;
+			  const subject = document.getElementById('subject').value;
+			  const message = document.getElementById('message').value;
+		  
+			  // Construct the mailto URL
+			  const mailtoURL = `mailto:dev@abineethan.rf.gd?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(
+				`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`
+			  )}`;
+		  
+			  // Open the mail client
+			  window.location.href = mailtoURL;
+			}
+		  </script>
+		  
 
           <div class="col-md-6 d-flex">
           	<div class="img" style="background-image: url(images/a_1.png);"></div>
@@ -557,7 +581,7 @@
               <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
                 <li class="ftco-animate"><a href="https://instagram.com/abineethan.dev"><span class="icon-instagram"></span></a></li>
 				<li class="ftco-animate"><a href="https://github.com/abineethan"><span class="icon-github"></span></a></li>
-				<li class="ftco-animate"><a href="mailto:dev@abineethan.rf.gd"><span class="icon-envelope"></span></a></li>
+				<li class="ftco-animate"><a href="mailto:dev@abineethan.is-a.dev"><span class="icon-envelope"></span></a></li>
 				<li class="ftco-animate"><a href="https://t.me/abineethan_dev"><span class="icon-paper-plane"></span></a></li>
               </ul>
             </div>
@@ -601,7 +625,7 @@
 	              <ul>
 	                <li><span class="icon icon-map-marker"></span><span class="text">Jaffna Sri Lanka</span></li>
 	                <li><a href="https://t.me/abineethan_dev"><span class="icon icon-paper-plane"></span><span class="text">@abineethan_dev</span></a></li>
-	                <li><a href="mailto:dev@abineethan.rf.gd"><span class="icon icon-envelope"></span><span class="text">dev@abineethan.rf.gd</span></a></li>
+	                <li><a href="mailto:dev@abineethan.is-a.dev"><span class="icon icon-envelope"></span><span class="text">dev@abineethan.is-a.dev</span></a></li>
 	              </ul>
 	            </div>
             </div>
