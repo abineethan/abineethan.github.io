@@ -517,8 +517,7 @@
           </div>
         </div>
 
-        <div class="row no-gutters block-9">
-			<!-- Contact Form Section -->
+        <div class="row no-gutters block-9 ftco-animate">
 			<div class="col-md-6 order-md-last d-flex">
 			  <form onsubmit="openMailClient(event)" class="bg-light p-4 p-md-5 contact-form">
 				<div class="form-group">
@@ -533,7 +532,6 @@
 			  </form>
 			</div>
 		  
-			<!-- Image Section -->
 			<div class="col-md-6 d-flex">
 			  <div class="img" style="background-image: url('images/a_1.png');"></div>
 			</div>
@@ -541,17 +539,10 @@
 		  
 		  <script>
 			function openMailClient(event) {
-			  // Prevent the form from submitting
 			  event.preventDefault();
-		  
-			  // Get form values
 			  const subject = document.getElementById('subject').value;
 			  const message = document.getElementById('message').value;
-		  
-			  // Construct the mailto URL
 			  const mailtoURL = `mailto:dev@abineethan.rf.gd?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message)}`;
-		  
-			  // Open the mail client
 			  window.location.href = mailtoURL;
 			}
 		  </script>
